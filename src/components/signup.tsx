@@ -46,7 +46,7 @@ export default function Signup() {
         }
 
         try {
-            const response = await fetch("https://cred-api.duckdns.org/api/signup", {
+            const response = await fetch("https://cred-api.duckdns.org/signup", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
