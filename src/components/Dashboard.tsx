@@ -107,7 +107,7 @@ export default function Dashboard() {
 
         const checkSession = async () => {
             try {
-                const res = await fetch("http://20.110.232.77:8000/api/dashboard-stats", {
+                const res = await fetch("http://73.184.19.28:8000/api/dashboard-stats", {
                     headers: { "Authorization": `Bearer ${token}` }
                 });
                 if (res.status === 401) handleLogout();
